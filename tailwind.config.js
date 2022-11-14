@@ -78,6 +78,7 @@ module.exports = {
     },
     fontFamily: {
       display: [
+        "Montserrat",
         "Inter var",
         "Noto Sans Thai",
         "SF Pro Display",
