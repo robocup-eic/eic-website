@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="text-center p-10">
       <Sponsor />
-      <Typography className="font-bold text-xs">© 2022 EIC Robocup, Chulalongkorn University</Typography>
+      <Typography className="font-bold text-xs">© 2022 EIC, Chulalongkorn University</Typography>
     </footer>
   )
 }
