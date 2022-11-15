@@ -1,6 +1,6 @@
-import LinkButton from "@components/common/LinkButton"
-import Typography from "@components/common/Typography"
-import { DescribeRoute } from "@components/Meta/DescribeRoute"
+import LinkButton from "@/components/common/LinkButton"
+import Typography from "@/components/common/Typography"
+import { DescribeRoute } from "@/components/Meta/DescribeRoute"
 import type { NextPage } from "next"
 
 const Home: NextPage = () => {
