@@ -1,8 +1,15 @@
 import Typography from "@/components/common/Typography"
 import clsx from "clsx"
 import Link from "next/link"
+import { useRouter } from "next/router"
+import { useMemo } from "react"
 
 export default function Navbar() {
+  const router = useRouter()
+  const location = useMemo(() => {
+    return `/${router.pathname.split("/")[1]}`
+  }, [router])
+
   return (
     <nav className="flex sticky items-center justify-between py-4 px-6">
       <Link href="/" passHref>
@@ -19,7 +26,7 @@ export default function Navbar() {
           { title: "Projects", url: "/projects" },
           { title: "Our Team", url: "/team" },
           { title: "Contact", url: "/contact" },
-        ].map((item, i) => (
+        ].map((item) => (
           <li key={item.url}>
             <Link href={item.url} passHref>
               <a>
@@ -28,7 +35,7 @@ export default function Navbar() {
                   className={clsx(
                     "font-light text-sm rounded-full",
                     "px-4 text-center flex justify-center items-center h-full w-full",
-                    i === 0 && "bg-gray-900 hover:bg-gray-800 transition-colors text-white"
+                    location === item.url && "bg-gray-900 hover:bg-gray-800 transition-colors text-white"
                   )}
                 >
                   {item.title}

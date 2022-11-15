@@ -6,9 +6,9 @@ export default function Page() {
   return (
     <DescribeRoute title="EIC Chula" description="Engineering Innovator Club">
       <section className="p-6 min-h-screen">
-        <Typography type="h1">Home</Typography>
-        <LinkButton href="/team" className="mt-4">
-          Go To Team Page
+        <Typography type="h1">Meet our Team</Typography>
+        <LinkButton href="/" className="mt-4">
+          Back to Home
         </LinkButton>
       </section>
     </DescribeRoute>
