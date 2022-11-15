@@ -6,12 +6,12 @@ import type { NextPage } from "next"
 const Home: NextPage = () => {
   return (
     <DescribeRoute title="EIC Chula" description="Engineering Innovator Club">
-      <main className="p-6">
+      <section className="p-6 min-h-screen">
         <Typography type="h1">Test</Typography>
         <LinkButton href="/" className="mt-4">
           Test
         </LinkButton>
-      </main>
+      </section>
     </DescribeRoute>
   )
 }
