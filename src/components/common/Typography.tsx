@@ -2,7 +2,7 @@ import { ReactNode } from "react"
 import clsx from "clsx"
 
 interface TypographyProps {
-  type: "h1" | "h2" | "h3" | "p" | "span"
+  type?: "h1" | "h2" | "h3" | "p" | "span"
   className?: string
   children: ReactNode
 }

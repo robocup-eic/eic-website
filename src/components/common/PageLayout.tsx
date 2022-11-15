@@ -1,5 +1,6 @@
 import { ReactNode } from "react"
-import Navbar from "@/components/Nav/Navbar"
+import Navbar from "./Nav/Navbar"
+import Footer from "./Footer"
 
 interface PageLayoutProps {
   children: ReactNode | ReactNode[]
@@ -7,9 +8,10 @@ interface PageLayoutProps {
 
 export default function PageLayout({ children }: PageLayoutProps) {
   return (
-    <main>
+    <main className="relative bg-creamy text-gray-900a min-h-screen">
       <Navbar />
       {children}
+      <Footer />
     </main>
   )
 }

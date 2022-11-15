@@ -5,7 +5,7 @@ import type { NextPage } from "next"
 
 const Home: NextPage = () => {
   return (
-    <DescribeRoute title="Next.js boilerplate" description="by betich">
+    <DescribeRoute title="EIC Chula" description="Engineering Innovator Club">
       <main className="p-6">
         <Typography type="h1">Test</Typography>
         <LinkButton href="/" className="mt-4">
