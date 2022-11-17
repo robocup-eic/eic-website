@@ -1,16 +1,14 @@
-import LinkButton from "@/components/common/LinkButton"
-import Typography from "@/components/common/Typography"
+import Hero from "@/components/Home/Hero"
+import Vision from "@/components/Home/Vision"
+import Achivement from "@/components/Home/Achivement"
 import { DescribeRoute } from "@/components/Meta/DescribeRoute"
 
 export default function Page() {
   return (
     <DescribeRoute title="EIC Chula" description="Engineering Innovator Club">
-      <section className="p-6 min-h-screen">
-        <Typography type="h1">Home</Typography>
-        <LinkButton href="/team" className="mt-4">
-          Go To Team Page
-        </LinkButton>
-      </section>
+      <Hero />
+      <Vision />
+      <Achivement />
     </DescribeRoute>
   )
 }
