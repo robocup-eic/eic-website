@@ -75,12 +75,12 @@ const Achivement = () => {
       <Typography type="h1" className="text-3xl md:text-8xl font-medium font-display text-center" custom={true}>
         Achivement
       </Typography>
-      <div className="lg:hidden flex flex-col items-center">
+      <div className="md:hidden flex flex-col items-center">
         {achivements.map((achivement, index) => {
           return <AchivementItem key={index} type="even" title={achivement.title} image={achivement.image} />
         })}
       </div>
-      <div className="hidden lg:block">
+      <div className="hidden md:block">
         <div className="relative">
           <div className="grid grid-cols-2 gap-36">
             <div className="flex flex-col justify-center items-end">
