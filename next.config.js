@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const withPWA = require("next-pwa")({
-  dest: "public",
+  dest: "build",
 })
 const { join } = require("path")
 
 module.exports = withPWA({
   reactStrictMode: true,
   pwa: {
-    dest: "public",
+    dest: "build",
     swSrc: "service-worker.js",
   },
   webpack(config, options) {

@@ -11,16 +11,16 @@ export default function Navbar() {
   }, [router])
 
   return (
-    <nav className="flex sticky items-center justify-between py-4 px-6">
+    <nav className="sticky flex items-center justify-between py-4 px-6">
       <Link href="/" passHref>
         <a>
-          <Typography type="h1" className="text-md hover:text-gray-700">
+          <Typography type="h2" className="text-md hover:text-gray-700">
             EIC
           </Typography>
         </a>
       </Link>
 
-      <ul className={clsx("flex gap-4 h-10", "rounded-full border border-gray-900")}>
+      <ul className={clsx("flex h-10 gap-4", "rounded-full border border-gray-900")}>
         {[
           { title: "Home", url: "/" },
           { title: "Projects", url: "/projects" },
@@ -33,9 +33,9 @@ export default function Navbar() {
                 <Typography
                   type="span"
                   className={clsx(
-                    "font-light text-sm rounded-full",
-                    "px-4 text-center flex justify-center items-center h-full w-full",
-                    location === item.url && "bg-gray-900 hover:bg-gray-800 transition-colors text-white"
+                    "rounded-full text-sm font-light",
+                    "flex h-full w-full items-center justify-center px-4 text-center",
+                    location === item.url && "bg-gray-900 text-white transition-colors hover:bg-gray-800"
                   )}
                 >
                   {item.title}

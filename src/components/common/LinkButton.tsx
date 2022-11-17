@@ -27,7 +27,7 @@ export default function LinkButton({ size = "md", href, className, children, ...
     <Link href={href} passHref>
       <a
         className={clsx(
-          "px-8 py-2 bg-gray-900 hover:bg-gray-800 transition-colors text-white font-display rounded-full inline-block",
+          "inline-block rounded-full bg-gray-900 px-8 py-2 font-display text-white transition-colors hover:bg-gray-800",
           className,
           textSize
         )}
