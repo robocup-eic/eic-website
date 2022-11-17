@@ -5,7 +5,7 @@ import { DescribeRoute } from "@/components/Meta/DescribeRoute"
 
 export default function Page() {
   return (
-    <DescribeRoute title="EIC Chula" description="Engineering Innovator Club">
+    <DescribeRoute title="EIC Chula" description="Engineering Innovator Club" imgURL="./OG-Banner.jpg">
       <Hero />
       <Vision />
       <Achivement />

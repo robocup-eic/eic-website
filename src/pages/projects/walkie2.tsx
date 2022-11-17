@@ -4,7 +4,7 @@ import { DescribeRoute } from "@/components/Meta/DescribeRoute"
 
 export default function Page() {
   return (
-    <DescribeRoute title="EIC Chula" description="Engineering Innovator Club">
+    <DescribeRoute title="EIC Chula" description="Engineering Innovator Club" imgURL="./OG-Banner.jpg">
       {/* <section className=" relative mx-12 h-1/6 "> */}
       <section className="full-w-screen-2xl relative mx-12 h-1/6 ">
         <span className=" mx-auto  h-1/6 p-10  ">
