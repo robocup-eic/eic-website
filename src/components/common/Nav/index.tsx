@@ -20,7 +20,7 @@ export default function Navbar() {
         </a>
       </Link>
 
-      <ul className={clsx("flex h-10 gap-4", "rounded-full border border-gray-900")}>
+      <ul className={clsx("hidden md:flex h-10 gap-4", "rounded-full border border-gray-900")}>
         {[
           { title: "Home", url: "/" },
           { title: "Projects", url: "/projects" },
