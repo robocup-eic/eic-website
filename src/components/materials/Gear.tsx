@@ -1,12 +1,14 @@
 import React from "react"
 
-function Icon() {
+interface MaterialProps {
+  className?: string
+}
+
+function Icon({ className }: MaterialProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="hover:transform hover:rotate-12 transition-all duration-700"
-      width="803"
-      height="778"
+      className={`${className} hover:transform hover:rotate-12 transition-all duration-700`}
       fill="none"
       viewBox="0 0 803 778"
     >
