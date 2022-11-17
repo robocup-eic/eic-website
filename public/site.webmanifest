@@ -1,7 +1,7 @@
 {
-  "short_name": "App",
-  "name": "Next.js Application",
-  "description": "Description",
+  "short_name": "EIC",
+  "name": "Engineering Innovator Club",
+  "description": "Engineering Innovator Club",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -27,6 +27,18 @@
       "short_name": "View",
       "description": "View the index page",
       "url": "/"
+    },
+    {
+      "name": "Walkie 1",
+      "short_name": "Walkie1",
+      "description": "View Walkie 1",
+      "url": "/projects/walkie1"
+    },
+    {
+      "name": "Walkie 2",
+      "short_name": "Walkie2",
+      "description": "View Walkie 2",
+      "url": "/projects/walkie2"
     }
   ]
 }
