@@ -24,10 +24,10 @@ export default function Page() {
         </span>
         <section className="relative p-6">
           <Typography type="p" className="pt-10 indent-20">
-            An intelligent autonomous service robot, our EIC's friend, is built to participate in Robocup@home 2022
+            An intelligent autonomous service robot, our EIC&apos;s friend, is built to participate in Robocup@home 2022
             competition. We initiated Walkie in spring 2021 with a strong belief that Robots are good human companions.
             Walkie can do various household tasks and be a party host. Things he can do are picking and placing the
-            object on the shelf, tidying up the garbage on the floor, serving the meal up to the customer's
+            object on the shelf, tidying up the garbage on the floor, serving the meal up to the customer&apos;s
             order,helping hold a bag, and following a user.
           </Typography>
         </section>
@@ -64,8 +64,8 @@ export default function Page() {
         </span>
         <section className=" p-6">
           <Typography className="text-center" type="caption">
-            Our team, EIC from Chulalongkorn University, is developing Walkie's body and brain to make our robot not
-            just a machine. He is our friend.
+            Our team, EIC from Chulalongkorn University, is developing Walkie&apos;s body and brain to make our robot
+            not just a machine. He is our friend.
           </Typography>
           <span className="my-12  flex items-center justify-center ">
             <LinkButton
