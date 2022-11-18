@@ -10,6 +10,7 @@ module.exports = withPWA({
     dest: "build",
     swSrc: "service-worker.js",
   },
+  assetPrefix: process.env.NODE_ENV === "production" ? "/eic-website" : "",
   webpack(config, options) {
     config.resolve.alias = {
       ...config.resolve.alias,
