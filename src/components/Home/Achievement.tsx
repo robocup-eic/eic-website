@@ -1,17 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
 import Typography from "../common/Typography"
 
-interface AchivementProps {
+interface AchievementProps {
   type: "odd" | "even"
   title: string
   image: string
 }
 
-const AchivementItem = ({ type, title, image }: AchivementProps) => {
+const AchievementItem = ({ type, title, image }: AchievementProps) => {
   return (
     <div className="my-2 md:my-8">
       <div>
-        <img src={image} className="w-64 rounded-lg" alt="achivement" />
+        <img src={image} className="w-64 rounded-lg" alt="achievement" />
       </div>
       <div className={`mt-2 w-64 ${type === "odd" ? "text-right" : null}`}>
         <Typography type="p" className="text-base md:text-lg">
@@ -22,8 +22,8 @@ const AchivementItem = ({ type, title, image }: AchivementProps) => {
   )
 }
 
-const Achivement = () => {
-  const achivements = [
+const Achievement = () => {
+  const achievements = [
     {
       title: "2022 : 3rd Place in PLC Competiton",
       image: "https://via.placeholder.com/640x360/D24E45/D24E45",
@@ -72,28 +72,28 @@ const Achivement = () => {
 
   return (
     <section className="relative mx-auto px-8 sm:px-16 lg:px-24 py-16 min-h-[90vh]">
-      <Typography type="h1" className="text-3xl md:text-8xl font-medium font-display text-center" custom={true}>
-        Achivement
+      <Typography type="h1" className="text-4xl md:text-6xl font-medium font-display text-center mb-4" custom={true}>
+        Achievement
       </Typography>
       <div className="md:hidden flex flex-col items-center">
-        {achivements.map((achivement, index) => {
-          return <AchivementItem key={index} type="even" title={achivement.title} image={achivement.image} />
+        {achievements.map((achievement, index) => {
+          return <AchievementItem key={index} type="even" title={achievement.title} image={achievement.image} />
         })}
       </div>
       <div className="hidden md:block">
         <div className="relative">
           <div className="grid grid-cols-2 gap-36">
             <div className="flex flex-col justify-center items-end">
-              {achivements.map((achivement, index) => {
+              {achievements.map((achievement, index) => {
                 if (index % 2 === 0) {
-                  return <AchivementItem key={index} type="odd" title={achivement.title} image={achivement.image} />
+                  return <AchievementItem key={index} type="odd" title={achievement.title} image={achievement.image} />
                 }
               })}
             </div>
             <div className="flex flex-col justify-center">
-              {achivements.map((achivement, index) => {
+              {achievements.map((achievement, index) => {
                 if (index % 2 !== 0) {
-                  return <AchivementItem key={index} type="even" title={achivement.title} image={achivement.image} />
+                  return <AchievementItem key={index} type="even" title={achievement.title} image={achievement.image} />
                 }
               })}
             </div>
@@ -107,4 +107,4 @@ const Achivement = () => {
   )
 }
 
-export default Achivement
+export default Achievement
