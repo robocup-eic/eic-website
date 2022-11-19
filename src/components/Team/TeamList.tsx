@@ -99,7 +99,7 @@ const TeamList = () => {
     <section className="relative mx-auto px-8 sm:px-16 lg:px-24 py-16 bg-tomato">
       <Listbox value={selected} onChange={setSelected}>
         <div className="relative border border-white rounded-3xl py-16 p-8 md:p-12 lg:p-16">
-          <div className="absolute top-2 right-2 md:top-4 md:right-4 lg:top-8 lg:right-8">
+          <div className="absolute top-4 right-4 md:top-6 md:right-6 lg:top-10 lg:right-8">
             <Listbox.Button className="relative cursor-default rounded-lg bg-white py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
               <span className="block truncate">{selected}</span>
               <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">

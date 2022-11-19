@@ -19,7 +19,7 @@ export default function Navbar() {
   }, [router])
 
   return (
-    <Popover as="header" className="relative">
+    <Popover as="header" className="relative z-50">
       <nav className="sticky flex items-center justify-between py-4 px-6">
         <Link href="/" passHref>
           <a>
