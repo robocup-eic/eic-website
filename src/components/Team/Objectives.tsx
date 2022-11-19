@@ -6,7 +6,7 @@ const Objectives = () => {
     <section className="relative mx-auto px-8 sm:px-16 lg:px-24 py-8 lg:py-16">
       <div className="flex flex-col lg:grid lg:grid-cols-8 gap-8 lg:gap-16">
         <div className="col-span-3">
-          <div className="rounded-3xl border border-black p-8 h-full space-y-8">
+          <div className="rounded-3xl border border-black p-8 h-full space-y-2">
             <Typography type="h2" className="text-xl md:text-4xl text-tomato font-bold font-display" custom={true}>
               Objective
             </Typography>
@@ -18,7 +18,7 @@ const Objectives = () => {
           </div>
         </div>
         <div className="col-span-5">
-          <div className="rounded-3xl border border-black p-8 h-full space-y-8">
+          <div className="rounded-3xl border border-black p-8 h-full space-y-2">
             <Typography type="h2" className="text-xl md:text-4xl text-tomato font-bold font-display" custom={true}>
               Our Accomplishments
             </Typography>
