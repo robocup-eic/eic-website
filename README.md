@@ -56,4 +56,4 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on the process for su
 
 ## License
 
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License (GPL) as published by the Free Software Foundation. Please see the [LICENSE.md](LICENSE.md) for more information.
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License (GPL) as published by the Free Software Foundation. Please see the [LICENSE](LICENSE) for more information.
