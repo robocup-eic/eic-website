@@ -12,7 +12,8 @@ export default function AnimatedCursor({
   // preview:
   // rgb(220, 90, 90)
   // rgb(46, 46, 46)
-  color = "46, 46, 46",
+  // rgb(252, 186, 3)
+  color = "252, 186, 3",
   outerAlpha = 0.4,
   innerSize = 12,
   outerSize = 12,
@@ -158,6 +159,7 @@ export default function AnimatedCursor({
       transition: "opacity 0.15s ease-in-out, transform 0.15s ease-in-out",
     },
     cursorInner: {
+      zIndex: 999,
       position: "fixed",
       borderRadius: "50%",
       width: innerSize,
@@ -167,6 +169,7 @@ export default function AnimatedCursor({
       transition: "opacity 0.15s ease-in-out, transform 0.25s ease-in-out",
     },
     cursorOuter: {
+      zIndex: 999,
       position: "fixed",
       borderRadius: "50%",
       pointerEvents: "none",
