@@ -4,6 +4,7 @@ import type { AppProps } from "next/app"
 import PageLayout from "@/components/common/PageLayout"
 import { AnimateSharedLayout } from "framer-motion"
 import { useEffect } from "react"
+import AnimatedCursor from "@/components/common/AnimatedCursor"
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <PageLayout>
       <AnimateSharedLayout>
+        <AnimatedCursor />
         <Component {...pageProps} />
       </AnimateSharedLayout>
     </PageLayout>
