@@ -1,5 +1,5 @@
-import Typography from "@/components/common/Typography"
-import LinkButton from "@/components/common/LinkButton"
+import LinkButton from "../common/LinkButton"
+import Typography from "../common/Typography"
 
 interface Information {
   imgURL: string
@@ -31,16 +31,6 @@ const information: Information[] = [
 export default function Info() {
   return (
     <section className="md:max-w-6xl mx-auto py-6 md:py-4">
-      <div className="relative px-6">
-        <Typography custom type="p" className="text-lg font-medium indent-4 md:indent-20">
-          An intelligent autonomous service robot, our EIC&apos;s friend, is built to participate in Robocup@home 2022
-          competition. We initiated Walkie in spring 2021 with a strong belief that Robots are good human companions.
-          Walkie can do various household tasks and be a party host. Things he can do are picking and placing the object
-          on the shelf, tidying up the garbage on the floor, serving the meal up to the customer&apos;s order, helping
-          hold a bag, and following a user.
-        </Typography>
-      </div>
-
       <div className="mt-8 grid grid-flow-row-dense grid-cols-2 p-2 gap-2 md:gap-20 md:py-10 md:max-w-4xl mx-auto">
         {information.map((info, index) => (
           <div key={index} className="w-full">

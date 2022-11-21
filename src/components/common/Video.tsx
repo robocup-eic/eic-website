@@ -1,4 +1,4 @@
-export default function Video() {
+export default function Video({ src }: { src: string }) {
   return (
     <section className="relative">
       <div className="bg-creamy h-48" />
@@ -6,7 +6,7 @@ export default function Video() {
         className="rounded-md md:rounded-2xl absolute -top-4 left-1/2 -translate-x-1/2 w-[90vw] md:w-[700px] h-full"
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/JoIOFo9wqqE"
+        src={src}
         title="YouTube video player"
         frameBorder={0}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

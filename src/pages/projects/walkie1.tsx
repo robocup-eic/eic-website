@@ -1,18 +1,14 @@
-import LinkButton from "@/components/common/LinkButton"
-import Typography from "@/components/common/Typography"
+import Video from "@/components/common/Video"
 import { DescribeRoute } from "@/components/Meta/DescribeRoute"
+import Hero from "@/components/Walkie1/Hero"
+import Info from "@/components/Walkie1/Info"
 
 export default function Page() {
   return (
     <DescribeRoute title="EIC Chula" description="Engineering Innovator Club" imgURL="./OG-Banner.jpg">
-      <section className="p-6 min-h-screen">
-        <Typography className="text-center" type="h1">
-          Walkie 1
-        </Typography>
-        <LinkButton href="/" className="mt-4">
-          Back to Home
-        </LinkButton>
-      </section>
+      <Hero />
+      <Info />
+      <Video src="https://www.youtube.com/embed/JoIOFo9wqqE" />
     </DescribeRoute>
   )
 }
