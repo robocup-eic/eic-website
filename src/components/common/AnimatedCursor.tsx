@@ -1,6 +1,11 @@
 import { CSSProperties, Fragment, MutableRefObject, useCallback, useEffect, useRef, useState } from "react"
 import { useEventListener } from "usehooks-ts"
 
+const config = {
+  tomato: "220, 90, 90",
+  creamy: "236, 231, 227",
+}
+
 /**
  * Animated Cursor
  * Replaces the native cursor with a custom animated cursor.
@@ -13,7 +18,6 @@ export default function AnimatedCursor({
   // rgb(220, 90, 90)
   // rgb(46, 46, 46)
   // rgb(252, 186, 3)
-  color = "252, 186, 3",
   outerAlpha = 0.4,
   innerSize = 12,
   outerSize = 12,
@@ -28,6 +32,7 @@ export default function AnimatedCursor({
   const [isVisible, setIsVisible] = useState(true)
   const [isActive, setIsActive] = useState(false)
   const [isActiveClickable, setIsActiveClickable] = useState(false)
+  const [color, setColor] = useState(config.tomato)
   let endX = useRef(0)
   let endY = useRef(0)
 
@@ -149,6 +154,30 @@ export default function AnimatedCursor({
       })
     }
   }, [isActive])
+
+  useEffect(() => {
+    const tomatoElements = document.querySelectorAll<HTMLElement>(".bg-tomato")
+    tomatoElements.forEach((el) => {
+      el.style.cursor = "none"
+      el.addEventListener("mouseover", () => {
+        setColor(config.creamy)
+      })
+      el.addEventListener("mouseout", () => {
+        setColor(config.tomato)
+      })
+    })
+
+    return () => {
+      tomatoElements.forEach((el) => {
+        el.removeEventListener("mouseover", () => {
+          setColor(config.tomato)
+        })
+        el.removeEventListener("mouseout", () => {
+          setColor(config.creamy)
+        })
+      })
+    }
+  }, [color])
 
   const styles: Record<string, CSSProperties> = {
     cursor: {

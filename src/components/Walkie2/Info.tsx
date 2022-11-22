@@ -61,10 +61,9 @@ export default function Info() {
           <LinkButton
             size="md"
             href="https://github.com/robocup-eic/smach"
+            tomato
             // className="mx-72 flex flex-col items-center justify-center "
             // className=" mx-auto w-1/4 items-center justify-center text-center"
-            customColor
-            className="bg-tomato text-white hover:bg-[#AC2820]"
           >
             Team Description Paper
           </LinkButton>
