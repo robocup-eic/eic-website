@@ -23,7 +23,7 @@ const information: Information[] = [
       "Walkie can arrange groceries in the cabinet, take out the trash, carry your bag, serve the cool drink from the refrigerator, and communicate with you in English.",
   },
   {
-    imgURL: "/assets/walkie2/ai.png",
+    imgURL: "/assets/walkie2/ai.jpg",
     description:
       "Artificial Intelligence plays a significant role in making Walkie reliable and making intelligent decisions in doing boring human routines.",
   },
