@@ -4,7 +4,7 @@ import Walkie2 from "@/components/materials/Walkie2"
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[80vh] md:min-h-screen mx-auto w-full overflow-hidden xl:max-w-7xl">
+    <section className="relative h-[80vh] max-h-[500px] sm:max-h-[550px] xl:max-h-[675px] mx-auto w-full overflow-hidden xl:max-w-7xl">
       <Walkie2 className="w-full sm:w-10/12 md:w-8/12 absolute -top-12 -left-4" />
       <div className="absolute top-4 right-10 flex flex-col items-end gap-2">
         <div className="gap-4">

@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from "next/image"
 import Typography from "../common/Typography"
 
 const AboutClub = () => {
@@ -6,7 +7,14 @@ const AboutClub = () => {
     <section className="relative mx-auto px-8 sm:px-16 lg:px-24">
       <div className="flex flex-col lg:grid grid-cols-8 gap-8 lg:gap-16">
         <div className="col-span-5">
-          <div className="bg-tomato w-full aspect-video rounded-2xl"></div>
+          {/* <div className="bg-tomato w-full aspect-video rounded-2xl"></div> */}
+          <Image
+            src="/assets/eic/group-photo.jpg"
+            alt="EIC"
+            width={1920}
+            height={1080}
+            className="w-full rounded-2xl"
+          />
         </div>
         <div className="col-span-3 space-y-4 md:space-y-8">
           <Typography type="h1" className="text-2xl lg:text-4xl text-tomato font-bold font-display" custom={true}>

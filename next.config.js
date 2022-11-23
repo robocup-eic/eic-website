@@ -10,6 +10,9 @@ module.exports = withPWA({
     dest: "build",
     swSrc: "service-worker.js",
   },
+  images: {
+    domains: ["via.placeholder.com"],
+  },
   assetPrefix: process.env.NODE_ENV === "production" ? "/eic-website/" : "",
   basePath: process.env.NODE_ENV === "production" ? "/eic-website" : "",
   webpack(config, options) {

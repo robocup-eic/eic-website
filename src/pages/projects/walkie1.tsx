@@ -8,7 +8,7 @@ export default function Page() {
     <DescribeRoute title="EIC Chula" description="Engineering Innovator Club" imgURL="./OG-Banner.jpg">
       <Hero />
       <Info />
-      <Video src="https://www.youtube.com/embed/JoIOFo9wqqE" />
+      <Video src="https://www.youtube.com/embed/qY5Un-Skkgw" />
     </DescribeRoute>
   )
 }

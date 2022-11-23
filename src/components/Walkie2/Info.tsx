@@ -1,5 +1,6 @@
 import Typography from "@/components/common/Typography"
 import LinkButton from "@/components/common/LinkButton"
+import Image from "next/image"
 
 interface Information {
   imgURL: string
@@ -8,21 +9,21 @@ interface Information {
 
 const information: Information[] = [
   {
-    imgURL: "https://via.placeholder.com/640x360/D24E45/D24E45",
+    imgURL: "/assets/walkie2/house-chore.jpg",
     description: "Walkie is a domestic service robot that helps you to do house chores and be your great companion.",
   },
   {
-    imgURL: "https://via.placeholder.com/640x360/D24E45/D24E45",
+    imgURL: "/assets/walkie2/mech-arms.jpg",
     description:
       "We might think that our daily routine is boring and simple. But, for a robot like Walkie, a simple task may require much complex planning and motion.",
   },
   {
-    imgURL: "https://via.placeholder.com/640x360/D24E45/D24E45",
+    imgURL: "/assets/walkie2/arrange-items.jpg",
     description:
       "Walkie can arrange groceries in the cabinet, take out the trash, carry your bag, serve the cool drink from the refrigerator, and communicate with you in English.",
   },
   {
-    imgURL: "https://via.placeholder.com/640x360/D24E45/D24E45",
+    imgURL: "/assets/walkie2/ai.png",
     description:
       "Artificial Intelligence plays a significant role in making Walkie reliable and making intelligent decisions in doing boring human routines.",
   },
@@ -32,7 +33,7 @@ export default function Info() {
   return (
     <section className="md:max-w-6xl mx-auto py-6 md:py-4">
       <div className="relative px-6">
-        <Typography custom type="p" className="text-lg font-medium indent-4 md:indent-20">
+        <Typography custom type="p" className="textsm md:text-lg font-medium indent-4 md:indent-20">
           An intelligent autonomous service robot, our EIC&apos;s friend, is built to participate in Robocup@home 2022
           competition. We initiated Walkie in spring 2021 with a strong belief that Robots are good human companions.
           Walkie can do various household tasks and be a party host. Things he can do are picking and placing the object
@@ -44,7 +45,8 @@ export default function Info() {
       <div className="mt-8 grid grid-flow-row-dense grid-cols-2 p-2 gap-2 md:gap-20 md:py-10 md:max-w-4xl mx-auto">
         {information.map((info, index) => (
           <div key={index} className="w-full">
-            <img className="w-full rounded-lg" src={info.imgURL} alt="Walkie" />
+            {/* <img className="w-full rounded-lg" src={info.imgURL} alt="Walkie" /> */}
+            <Image className="w-full rounded-lg" width={640} height={360} src={info.imgURL} alt="Walkie" />
             <Typography type="caption" className="text-left">
               {info.description}
             </Typography>
