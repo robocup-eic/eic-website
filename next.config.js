@@ -1,15 +1,16 @@
 /** @type {import('next').NextConfig} */
 const withPWA = require("next-pwa")({
   dest: "build",
+  swSrc: "service-worker.js",
 })
 const { join } = require("path")
 
 module.exports = withPWA({
   reactStrictMode: true,
-  pwa: {
-    dest: "build",
-    swSrc: "service-worker.js",
-  },
+  // pwa: {
+  //   dest: "build",
+  //   swSrc: "service-worker.js",
+  // },
   images: {
     domains: ["via.placeholder.com"],
   },
