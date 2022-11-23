@@ -179,6 +179,30 @@ export default function AnimatedCursor({
     }
   }, [color])
 
+  useEffect(() => {
+    const videoElements = document.querySelectorAll<HTMLElement>("video, iframe")
+    videoElements.forEach((el) => {
+      el.style.cursor = "none"
+      el.addEventListener("mouseover", () => {
+        setIsVisible(false)
+      })
+      el.addEventListener("mouseout", () => {
+        setIsVisible(true)
+      })
+    })
+
+    return () => {
+      videoElements.forEach((el) => {
+        el.removeEventListener("mouseover", () => {
+          setIsVisible(false)
+        })
+        el.removeEventListener("mouseout", () => {
+          setIsVisible(true)
+        })
+      })
+    }
+  }, [isVisible])
+
   const styles: Record<string, CSSProperties> = {
     cursor: {
       zIndex: 999,
