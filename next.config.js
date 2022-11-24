@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const withPWA = require("next-pwa")({
   dest: "build",
-  swSrc: "service-worker.js",
+  swSrc: "./service-worker.js",
 })
 const { join } = require("path")
 
