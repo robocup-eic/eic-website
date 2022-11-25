@@ -53,6 +53,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on the process for su
 - [@betich](https://github.com/betich) — _Developer_
 - [@boomchanotai](https://github.com/boomchanotai) — _Developer_
 - [@GameTL](https://github.com/GameTL) — _Developer_
+- [@ponchowannie](https://github.com/ponchowannie) - _Developer_
 
 ## License
 
