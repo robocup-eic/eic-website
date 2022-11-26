@@ -6,10 +6,11 @@ interface ButtonProps {
   size?: "sm" | "md" | "lg"
   href: string
   className?: string
+  tomato?: boolean
   children: ReactNode
 }
 
-export default function LinkButton({ size = "md", href, className, children, ...props }: ButtonProps) {
+export default function LinkButton({ size = "md", href, tomato, className, children, ...props }: ButtonProps) {
   const textSize = useMemo(() => {
     switch (size) {
       case "sm":
@@ -27,7 +28,8 @@ export default function LinkButton({ size = "md", href, className, children, ...
     <Link href={href} passHref>
       <a
         className={clsx(
-          "inline-block rounded-full bg-gray-900 px-8 py-4 font-display text-white transition-colors hover:bg-gray-800",
+          "inline-block rounded-full px-8 py-4 font-display transition-colors",
+          tomato ? "bg-tomato text-white hover:bg-[#AC2820]" : "bg-gray-900 text-white hover:bg-gray-800",
           className,
           textSize
         )}

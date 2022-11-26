@@ -1,15 +1,22 @@
 /** @type {import('next').NextConfig} */
 const withPWA = require("next-pwa")({
   dest: "build",
+  swSrc: "./service-worker.js",
 })
 const { join } = require("path")
 
 module.exports = withPWA({
   reactStrictMode: true,
-  pwa: {
-    dest: "build",
-    swSrc: "service-worker.js",
+  // pwa: {
+  //   dest: "build",
+  //   swSrc: "service-worker.js",
+  // },
+  images: {
+    domains: ["via.placeholder.com"],
+    unoptimized: true,
   },
+  assetPrefix: process.env.NODE_ENV === "production" ? "/eic-website/" : "/",
+  basePath: process.env.NODE_ENV === "production" ? "/eic-website" : "",
   webpack(config, options) {
     config.resolve.alias = {
       ...config.resolve.alias,

@@ -1,11 +1,17 @@
+import { DescribeRoute } from "@/components/Meta/DescribeRoute"
 import LinkButton from "@/components/common/LinkButton"
 import Typography from "@/components/common/Typography"
-import { DescribeRoute } from "@/components/Meta/DescribeRoute"
 import Image from "next/image"
+import Hero from "@/components/Walkie2/Hero"
+import Info from "@/components/Walkie2/Info"
+import Video from "@/components/common/Video"
 
 export default function Page() {
   return (
     <DescribeRoute title="EIC Chula" description="Engineering Innovator Club">
+      <Hero />
+      <Info />
+      <Video src="https://www.youtube.com/embed/JoIOFo9wqqE" />
       {/* <section className=" relative mx-12 h-1/6 "> */}
       <section className="full-w-screen-2xl relative mx-12 h-1/6 ">
         <span className=" mx-auto  h-1/6 p-10  ">
