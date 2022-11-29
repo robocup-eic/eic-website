@@ -28,7 +28,7 @@ const Vision = () => {
           </Typography>
         </div>
         <div className="absolute bottom-0 md:-bottom-1/6 -right-1/3">
-          <Gear className="w-[300px] md:w-[800px]" />
+          <Gear inverted className="w-[300px] md:w-[800px]" />
         </div>
       </div>
     </section>
