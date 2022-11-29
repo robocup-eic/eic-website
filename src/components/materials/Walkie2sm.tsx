@@ -1,12 +1,6 @@
-export default function Walkie2sm({ className }: { className?: string }) {
-    return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="428"
-      height="335"
-      fill="none"
-      viewBox="0 0 428 335"
-    >
+export default function Walkie2sm({ ...props }: { className?: string }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="428" height="335" fill="none" viewBox="0 0 428 335" {...props}>
       <g clipPath="url(#clip0_353_1060)">
         <g clipPath="url(#clip1_353_1060)">
           <path
@@ -206,13 +200,9 @@ export default function Walkie2sm({ className }: { className?: string }) {
           <rect width="428" height="335" fill="#fff" rx="30"></rect>
         </clipPath>
         <clipPath id="clip1_353_1060">
-          <path
-            fill="#fff"
-            d="M0 0H931.416V640.714H0z"
-            transform="translate(-153 -82)"
-          ></path>
+          <path fill="#fff" d="M0 0H931.416V640.714H0z" transform="translate(-153 -82)"></path>
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }
