@@ -15,8 +15,8 @@ module.exports = withPWA({
     domains: ["via.placeholder.com"],
     unoptimized: true,
   },
-  // assetPrefix: process.env.NODE_ENV === "production" ? "/eic-website/" : "/",
-  // basePath: process.env.NODE_ENV === "production" ? "/eic-website" : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/eic-website/" : "/",
+  basePath: process.env.NODE_ENV === "production" ? "/eic-website" : "",
   webpack(config, options) {
     config.resolve.alias = {
       ...config.resolve.alias,
