@@ -16,7 +16,11 @@ export default function Typography({ type, className, children, custom }: Typogr
   switch (type) {
     case "h1":
       return (
-        <h1 className={custom && className ? getClassName(className) : getClassName("text-[120px] font-medium")}>
+        <h1
+          className={
+            custom && className ? getClassName(className) : getClassName("text-[98px] xl:text-[120px] font-medium")
+          }
+        >
           {children}
         </h1>
       )

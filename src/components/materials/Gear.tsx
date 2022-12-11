@@ -1,4 +1,4 @@
-import { useScroll, useSpring, motion, useTransform, useMotionTemplate } from "framer-motion"
+import { useScroll, motion, useTransform, useMotionTemplate } from "framer-motion"
 
 interface MaterialProps {
   className?: string
@@ -7,8 +7,14 @@ interface MaterialProps {
 
 function Icon({ className, inverted }: MaterialProps) {
   const { scrollYProgress } = useScroll()
-  const rotateValue = useSpring(scrollYProgress, { stiffness: 400, damping: 90, mass: 50 })
-  const rotateDegree = useTransform(rotateValue, [0, 1], [0, inverted ? -360 : 360])
+  // const rotateValue = useSpring(scrollYProgress, { stiffness: 400, damping: 90, mass: mass })
+  // const rotateDegree = useTransform(rotateValue, [0, 1], [0, inverted ? -360 : 360])
+  const rotateDegree = useTransform(scrollYProgress, [0, 1], [0, inverted ? -360 : 360], {
+    ease: (x) => {
+      const MAX = 5
+      return x === 0 ? 0 : Math.pow(2, 10 * x - 10) * MAX
+    },
+  })
   const rotate = useMotionTemplate`${rotateDegree}deg`
 
   return (

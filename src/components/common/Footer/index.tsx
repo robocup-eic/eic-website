@@ -2,7 +2,7 @@ import clsx from "clsx"
 import { useRouter } from "next/router"
 import { useMemo } from "react"
 import Typography from "../Typography"
-import Sponsor from "./Sponsor"
+// import Sponsor from "./Sponsor"
 
 export default function Footer() {
   const router = useRouter()
@@ -28,7 +28,7 @@ export default function Footer() {
     >
       {theme !== "none" && (
         <>
-          <Sponsor theme={theme} />
+          {/* <Sponsor theme={theme} /> */}
           <Typography className="font-bold text-xs">© 2022 EIC, Chulalongkorn University</Typography>
         </>
       )}
