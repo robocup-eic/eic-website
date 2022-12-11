@@ -86,6 +86,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Add .nojekyll
         run: echo > out/.nojekyll
+      - name: Add CNAME
+        run: echo "echo eicrobocup.com > CNAME" > out/CNAME
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
