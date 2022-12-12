@@ -382,13 +382,6 @@ const team2022: Team[] = [
         img: "CV10_Purich_Siritip",
       },
       {
-        name: "Panithi Makthiengtrong",
-        position: "CV Team Member",
-        id: "CV11",
-        coreteam: true,
-        img: "CV11_Panithi_Makthiengtrong",
-      },
-      {
         name: "Patteera Lerdtada",
         position: "CV Team Member",
         id: "CV12",
@@ -581,7 +574,40 @@ const team2022: Team[] = [
     ],
   },
   // Web Developer
-  // None
+  {
+    name: "Web Developer",
+    category: "Web Developer",
+    members: [
+      {
+        name: "Panithi Makthiengtrong",
+        position: "Web Developer",
+        id: "Web01",
+        coreteam: true,
+        img: "Web01_Panithi_Makthiengtrong",
+      },
+      {
+        name: "Wichayada Chamnansil",
+        position: "Web Designer",
+        id: "Web02",
+        coreteam: true,
+        img: "Web02_Wichayada_Chamnansil",
+      },
+      {
+        name: "Chanotai Krajeam",
+        position: "Web Developer",
+        id: "Web03",
+        coreteam: true,
+        img: "Web03_Chanotai_Krajeam",
+      },
+      {
+        name: "Porrat Wannathip",
+        position: "Web Developer",
+        id: "Web04",
+        coreteam: true,
+        img: "Web04_Porrat_Wannathip",
+      },
+    ],
+  },
 
   // Advisor
   {
