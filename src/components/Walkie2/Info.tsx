@@ -62,7 +62,7 @@ export default function Info() {
         <span className="my-12 flex items-center justify-center ">
           <LinkButton
             size="md"
-            href="https://github.com/robocup-eic/smach"
+            href="/assets/EIC_Robotics_Team_Description_Paper_2023.pdf"
             tomato
             // className="mx-72 flex flex-col items-center justify-center "
             // className=" mx-auto w-1/4 items-center justify-center text-center"
