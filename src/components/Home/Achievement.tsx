@@ -26,11 +26,11 @@ const AchievementItem = ({ type, title, image }: AchievementProps) => {
 
 const achievements = [
   {
-    title: "2022 : 3rd Place in PLC Competiton",
+    title: "2022 : 2nd Place in RoboCup@Home Competition",
     image: "https://via.placeholder.com/640x360/D24E45/D24E45",
   },
   {
-    title: "2022 : 2nd Place in RoboCup@Home Competition",
+    title: "2022 : 3rd Place in PLC Competiton",
     image: "https://via.placeholder.com/640x360/D24E45/D24E45",
   },
   {
