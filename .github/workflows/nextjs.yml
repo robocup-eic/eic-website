@@ -87,7 +87,8 @@ jobs:
       - name: Add .nojekyll
         run: echo > out/.nojekyll
       - name: Add CNAME
-        run: printf '%s\n' 'eicrobocup.com' 'www.eicrobocup.com' > out/CNAME
+        # run: printf '%s\n' 'eicrobocup.com' 'www.eicrobocup.com' > out/CNAME
+        run: echo 'eicrobocup.com' > out/CNAME
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
