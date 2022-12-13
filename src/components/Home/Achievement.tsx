@@ -27,15 +27,15 @@ const AchievementItem = ({ type, title, image }: AchievementProps) => {
 const achievements = [
   {
     title: "2022 : 2nd Place in RoboCup@Home Competition",
-    image: "https://via.placeholder.com/640x360/D24E45/D24E45",
+    image: "/assets/acheivements/2022_robocup.jpg",
   },
   {
     title: "2022 : 3rd Place in PLC Competiton",
-    image: "https://via.placeholder.com/640x360/D24E45/D24E45",
+    image: "/assets/acheivements/2022_plc.jpeg",
   },
   {
     title: "2020 : 2nd Place in MEA Hackathon",
-    image: "https://via.placeholder.com/640x360/D24E45/D24E45",
+    image: "/assets/acheivements/2020_mea.jpg",
   },
   {
     title: "2017 : 3rd Place in PLC competition",
@@ -59,7 +59,7 @@ const achievements = [
   },
   {
     title: "2008 : 1st Place in RoboCup Soccer Competition and 1st Place RoboCup Rescue",
-    image: "https://via.placeholder.com/640x360/D24E45/D24E45",
+    image: "/assets/acheivements/2008_robocup.jpeg",
   },
   {
     title: "2007 : 2nd Place in RoboCup Soccer Competition",
