@@ -49,7 +49,9 @@ const publications: Publication[] = [
 export default function Publications() {
   return (
     <section className="p-12 md:max-w-5xl xl:max-w-7xl mx-auto">
-      <Typography type="h1">Publications</Typography>
+      <Typography className="text-6xl break-words mb-4 xl:text-[120px] font-medium" custom={true} type="h1">
+        Publications
+      </Typography>
       <div className="list-disc space-y-4 indent-10 text-tomato font-display">
         {publications.map((publication) => (
           <li key={publication.title}>
