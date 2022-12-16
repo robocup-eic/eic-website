@@ -39,7 +39,7 @@ const team2022: Team[] = [
       },
       {
         name: "Dechatorn Devaphalin",
-        position: "Secretary, ROS Team Member",
+        position: "Secretary",
         id: "Secretary",
         coreteam: true,
         img: "Secretary_Dechatorn_Devaphalin",
