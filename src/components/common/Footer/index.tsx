@@ -21,7 +21,7 @@ export default function Footer() {
   return (
     <footer
       className={clsx(
-        "text-center p-10",
+        "p-10 text-center",
         theme === "creamy" && "bg-creamy text-gray-900",
         theme === "tomato" && "bg-tomato text-white"
       )}
@@ -29,7 +29,7 @@ export default function Footer() {
       {theme !== "none" && (
         <>
           {/* <Sponsor theme={theme} /> */}
-          <Typography className="font-bold text-xs">© 2022 EIC, Chulalongkorn University</Typography>
+          <Typography className="text-xs font-bold">© 2022 EIC, Chulalongkorn University</Typography>
         </>
       )}
     </footer>

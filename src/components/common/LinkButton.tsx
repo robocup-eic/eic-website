@@ -28,7 +28,7 @@ export default function LinkButton({ size = "md", href, tomato, className, child
     <Link href={href} passHref>
       <a
         className={clsx(
-          "inline-block rounded-full text-center px-8 py-4 font-display transition-colors",
+          "inline-block rounded-full px-8 py-4 text-center font-display transition-colors",
           tomato ? "bg-tomato text-white hover:bg-[#AC2820]" : "bg-gray-900 text-white hover:bg-gray-800",
           className,
           textSize

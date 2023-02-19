@@ -6,14 +6,14 @@ interface SponsorProps {
 
 export default function Sponsor({ theme }: SponsorProps) {
   return (
-    <div className="flex justify-center gap-2 my-8">
+    <div className="my-8 flex justify-center gap-2">
       {Array(8)
         .fill("")
         .map((_, i) => i)
         .map((e) => (
           <div
             key={e}
-            className={clsx("w-8 h-8", theme === "tomato" && "bg-creamy", theme === "creamy" && "bg-tomato")}
+            className={clsx("h-8 w-8", theme === "tomato" && "bg-creamy", theme === "creamy" && "bg-tomato")}
           />
         ))}
     </div>

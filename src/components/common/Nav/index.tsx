@@ -29,7 +29,7 @@ export default function Navbar() {
           </a>
         </Link>
 
-        <ul className={clsx("hidden md:flex h-10 gap-4", "rounded-full border border-gray-900")}>
+        <ul className={clsx("hidden h-10 gap-4 md:flex", "rounded-full border border-gray-900")}>
           {navigation.map((item) => (
             <li key={item.url}>
               <Link href={item.url} passHref>
@@ -78,7 +78,7 @@ export default function Navbar() {
         leaveTo="opacity-0 scale-95"
       >
         <Popover.Panel focus className="absolute inset-x-0 top-0 z-50 origin-top transform p-2 transition md:hidden">
-          <div className="overflow-hidden rounded-lg shadow-md ring-1 ring-black ring-opacity-5 bg-gray-700">
+          <div className="overflow-hidden rounded-lg bg-gray-700 shadow-md ring-1 ring-black ring-opacity-5">
             <div className="pt-5 pb-6">
               {/* hm */}
               <div className="space-y-1 px-2">

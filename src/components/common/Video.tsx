@@ -1,9 +1,9 @@
 export default function Video({ src }: { src: string }) {
   return (
     <section className="relative">
-      <div className="bg-creamy h-48" />
+      <div className="h-48 bg-creamy" />
       <iframe
-        className="rounded-md md:rounded-2xl absolute -top-4 left-1/2 -translate-x-1/2 w-[90vw] md:w-[700px] h-full"
+        className="absolute -top-4 left-1/2 h-full w-[90vw] -translate-x-1/2 rounded-md md:w-[700px] md:rounded-2xl"
         width="560"
         height="315"
         src={src}
@@ -12,7 +12,7 @@ export default function Video({ src }: { src: string }) {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       />
-      <div className="bg-tomato h-48" />
+      <div className="h-48 bg-tomato" />
     </section>
   )
 }

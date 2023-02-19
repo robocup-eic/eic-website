@@ -30,8 +30,8 @@ const information: Information[] = [
 
 export default function Info() {
   return (
-    <section className="md:max-w-6xl mx-auto py-6 md:py-4">
-      <div className="mt-8 grid grid-flow-row-dense grid-cols-2 p-2 gap-2 md:gap-20 md:py-10 md:max-w-4xl mx-auto">
+    <section className="mx-auto py-6 md:max-w-6xl md:py-4">
+      <div className="mx-auto mt-8 grid grid-flow-row-dense grid-cols-2 gap-2 p-2 md:max-w-4xl md:gap-20 md:py-10">
         {information.map((info, index) => (
           <div key={index} className="w-full">
             <img className="w-full rounded-lg" src={info.imgURL} alt="Walkie" />

@@ -77,11 +77,11 @@ export default function Achievement() {
   const isInView = useInView(containerRef)
 
   return (
-    <section className="relative mx-auto px-8 sm:px-16 lg:px-24 py-16 min-h-[90vh]" ref={containerRef}>
-      <Typography type="h1" className="text-4xl md:text-6xl font-medium font-display text-center mb-4" custom={true}>
+    <section className="relative mx-auto min-h-[90vh] px-8 py-16 sm:px-16 lg:px-24" ref={containerRef}>
+      <Typography type="h1" className="mb-4 text-center font-display text-4xl font-medium md:text-6xl" custom={true}>
         Achievement
       </Typography>
-      <div className="md:hidden flex flex-col items-center">
+      <div className="flex flex-col items-center md:hidden">
         {achievements.map((achievement, index) => {
           return <AchievementItem key={index} type="even" title={achievement.title} image={achievement.image} />
         })}
@@ -89,7 +89,7 @@ export default function Achievement() {
       <div className="hidden md:block">
         <div className="relative">
           <div className="grid grid-cols-2 gap-36">
-            <div className="flex flex-col justify-center items-end">
+            <div className="flex flex-col items-end justify-center">
               {achievements.map((achievement, index) => {
                 if (index % 2 === 0) {
                   return <AchievementItem key={index} type="odd" title={achievement.title} image={achievement.image} />
@@ -103,7 +103,7 @@ export default function Achievement() {
                 }
               })}
             </div>
-            <div className="w-0.5 h-[1000px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+            <div className="absolute top-1/2 left-1/2 h-[1000px] w-0.5 -translate-x-1/2 -translate-y-1/2 transform" />
           </div>
         </div>
       </div>

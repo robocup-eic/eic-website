@@ -18,7 +18,7 @@ export default function Typography({ type, className, children, custom }: Typogr
       return (
         <h1
           className={
-            custom && className ? getClassName(className) : getClassName("text-[98px] xl:text-[120px] font-medium")
+            custom && className ? getClassName(className) : getClassName("text-[98px] font-medium xl:text-[120px]")
           }
         >
           {children}
@@ -44,7 +44,7 @@ export default function Typography({ type, className, children, custom }: Typogr
       )
     case "caption":
       return (
-        <p className={custom && className ? getClassName(className) : getClassName("px-3 pt-2 text-md font-medium")}>
+        <p className={custom && className ? getClassName(className) : getClassName("text-md px-3 pt-2 font-medium")}>
           {children}
         </p>
       )

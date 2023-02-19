@@ -48,11 +48,11 @@ const publications: Publication[] = [
 
 export default function Publications() {
   return (
-    <section className="p-12 md:max-w-5xl xl:max-w-7xl mx-auto">
-      <Typography className="text-6xl break-words mb-4 xl:text-[120px] font-medium" custom={true} type="h1">
+    <section className="mx-auto p-12 md:max-w-5xl xl:max-w-7xl">
+      <Typography className="mb-4 break-words text-6xl font-medium xl:text-[120px]" custom={true} type="h1">
         Publications
       </Typography>
-      <div className="list-disc space-y-4 indent-10 text-tomato font-display">
+      <div className="list-disc space-y-4 indent-10 font-display text-tomato">
         {publications.map((publication) => (
           <li key={publication.title}>
             <Link href={publication.href} passHref>

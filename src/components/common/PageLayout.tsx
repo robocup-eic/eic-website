@@ -43,7 +43,7 @@ export default function PageLayout({ children }: PageLayoutProps) {
     //   containerRef={containerRef}
     // >
     // <main data-scroll-container ref={containerRef} className="relative bg-creamy text-gray-900 min-h-screen">
-    <main className="relative bg-creamy text-gray-900 min-h-screen">
+    <main className="relative min-h-screen bg-creamy text-gray-900">
       <Navbar />
       <motion.div initial="initial" animate="animate" variants={variants} key={router.pathname}>
         {children}

@@ -10,9 +10,9 @@ const TeamList = () => {
   const selectedYearTeam = teams.find((team) => team.year === selected)?.teams || []
 
   return (
-    <section className="relative mx-auto px-8 sm:px-16 lg:px-24 py-16 bg-tomato">
+    <section className="relative mx-auto bg-tomato px-8 py-16 sm:px-16 lg:px-24">
       <Listbox value={selected} onChange={setSelected}>
-        <div className="relative border border-white rounded-3xl py-16 p-8 md:p-12 lg:p-16">
+        <div className="relative rounded-3xl border border-white p-8 py-16 md:p-12 lg:p-16">
           <div className="absolute top-4 right-4 md:top-6 md:right-6 lg:top-10 lg:right-8">
             <Listbox.Button className="relative cursor-default rounded-lg bg-white py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
               <span className="block truncate">{selected}</span>
@@ -59,28 +59,28 @@ const TeamList = () => {
             <div key={team.name}>
               <Typography
                 type="h2"
-                className="text-2xl md:text-3xl text-white font-bold text-center font-display"
+                className="text-center font-display text-2xl font-bold text-white md:text-3xl"
                 custom={true}
               >
                 {team.name}
               </Typography>
-              <div className="my-8 flex flex-wrap gap-8 md:gap-12 justify-center">
+              <div className="my-8 flex flex-wrap justify-center gap-8 md:gap-12">
                 {team.members
                   .filter((member) => member.coreteam)
                   .map((member) => (
-                    <div key={member.id} className="flex flex-col justify-center items-center">
-                      <img src={`/assets/members/${member.img}.jpg`} alt={member.id} className="w-48 h-48 rounded-xl" />
+                    <div key={member.id} className="flex flex-col items-center justify-center">
+                      <img src={`/assets/members/${member.img}.jpg`} alt={member.id} className="h-48 w-48 rounded-xl" />
                       <div className="mt-4">
                         <Typography
                           type="h3"
-                          className="text-base md:text-lg text-white font-semibold text-center font-display"
+                          className="text-center font-display text-base font-semibold text-white md:text-lg"
                           custom={true}
                         >
                           {member.name}
                         </Typography>
                         <Typography
                           type="p"
-                          className="text-sm md:text-base text-white text-center font-display"
+                          className="text-center font-display text-sm text-white md:text-base"
                           custom={true}
                         >
                           {member.position}
