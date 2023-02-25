@@ -5,7 +5,7 @@ import Robocup from "../materials/Robocup"
 const Hero = () => {
   return (
     <section className="relative mx-auto min-h-[90vh] grid-cols-2 gap-16 px-8 sm:px-16 md:grid lg:px-24">
-      <div className="relative z-10 flex flex-col items-start justify-start py-16">
+      <div className="relative z-10 flex flex-col items-start justify-start py-8">
         <div>
           <Typography type="h1" className="font-display text-4xl font-medium md:text-8xl" custom={true}>
             Welcome to EIC!

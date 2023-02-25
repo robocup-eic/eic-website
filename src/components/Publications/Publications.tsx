@@ -48,7 +48,7 @@ const publications: Publication[] = [
 
 export default function Publications() {
   return (
-    <section className="mx-auto p-12 md:max-w-5xl xl:max-w-7xl">
+    <section className="mx-auto min-h-screen p-12 md:max-w-5xl xl:max-w-7xl">
       <Typography className="mb-4 break-words text-6xl font-medium xl:text-[120px]" custom={true} type="h1">
         Publications
       </Typography>

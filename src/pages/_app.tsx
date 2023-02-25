@@ -32,7 +32,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     <PageLayout>
       <AnimateSharedLayout>
         {!isTouchScreenDevice && <AnimatedCursor />}
-        <Component {...pageProps} />
+        <div className="pt-16">
+          <Component {...pageProps} />
+        </div>
       </AnimateSharedLayout>
     </PageLayout>
   )
