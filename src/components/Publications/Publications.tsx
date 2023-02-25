@@ -56,9 +56,11 @@ export default function Publications() {
         {publications.map((publication) => (
           <li key={publication.title}>
             <Link href={publication.href} passHref>
-              <a className="text-black hover:underline">{publication.title}</a>
+              <a className="text-black hover:underline" target="_blank" rel="noreferrer">
+                {publication.title}
+              </a>
             </Link>
-            <span className="text-tomato"> ({publication.year})</span>
+            <span className="text-tomato">({publication.year})</span>
           </li>
         ))}
       </div>
