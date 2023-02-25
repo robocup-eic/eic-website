@@ -3,7 +3,7 @@ import Gear from "../materials/Gear"
 
 const Vision = () => {
   return (
-    <section className="relative mx-auto flex min-h-screen flex-col items-center justify-center overflow-hidden bg-tomato px-8 text-white">
+    <section className="relative mx-auto flex flex-col items-center justify-center overflow-hidden bg-tomato py-36 px-8 text-white">
       <div className="grid h-full w-full max-w-4xl grid-cols-1 items-center gap-16 sm:grid-cols-2">
         <div className="">
           <Typography type="h1" className="font-display text-5xl font-medium md:text-6xl" custom={true}>
