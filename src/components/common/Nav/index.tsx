@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="header"
-      className="fixed top-0 left-0 z-50 w-full bg-creamy px-6 transition-all duration-150 ease-out sm:py-4"
+      className="fixed top-0 left-0 z-50 w-full bg-creamy px-6 transition-all duration-150 ease-out sm:relative sm:py-4"
     >
       {({ open }) => (
         <>
