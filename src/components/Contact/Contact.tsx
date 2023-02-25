@@ -5,7 +5,7 @@ import { SocialFacebook, SocialInstagram, SocialYoutube } from "../materials/Soc
 
 export default function Contact() {
   return (
-    <section className="relative sm:text-sm md:text-lg">
+    <section className="relative h-screen overflow-hidden sm:text-sm md:text-lg">
       <div className="relative z-10 text-center">
         <Typography type="h1" className="pt-20 font-display text-2xl" custom={true}>
           robocup.cu@gmail.com
