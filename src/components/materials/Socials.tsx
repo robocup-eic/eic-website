@@ -35,18 +35,14 @@ export function SocialGitHub({ ...restProps }) {
 
 export function SocialYoutube({ ...restProps }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 36 36" {...restProps}>
+    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" {...restProps}>
       <g clipPath="url(#clip0_546_6)">
-        <rect width="36" height="36" fill="currentColor" rx="7.2"></rect>
-        <path
-          fill="#fff"
-          d="M29.458 12.388a2.91 2.91 0 00-2.048-2.06c-1.806-.488-9.05-.488-9.05-.488s-7.243 0-9.05.487a2.91 2.91 0 00-2.048 2.061C6.778 14.207 6.778 18 6.778 18s0 3.793.484 5.612a2.91 2.91 0 002.048 2.061c1.807.487 9.05.487 9.05.487s7.244 0 9.05-.487a2.91 2.91 0 002.048-2.061c.484-1.818.484-5.612.484-5.612s0-3.793-.484-5.611"
-        ></path>
-        <path fill="currentColor" d="M15.99 21.444L22.046 18l-6.054-3.444v6.888z"></path>
+        <rect width="36" height="36" rx="7.2" fill="black" />
+        <path d="M12 25L25 17.5004L12 10V25Z" fill="white" />
       </g>
       <defs>
         <clipPath id="clip0_546_6">
-          <rect width="36" height="36" fill="#fff" rx="7.2"></rect>
+          <rect width="36" height="36" rx="7.2" fill="white" />
         </clipPath>
       </defs>
     </svg>
