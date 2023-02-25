@@ -38,6 +38,13 @@ const team2022: Team[] = [
         img: "VicePresident_Suppakorn_Boonprasert",
       },
       {
+        name: "Tinapat Limsila",
+        position: "Vice President and NLP Team Leader",
+        id: "VicePresident2",
+        coreteam: true,
+        img: "NLP01_Tinapat_Limsila",
+      },
+      {
         name: "Dechatorn Devaphalin",
         position: "Secretary",
         id: "Secretary",
@@ -404,7 +411,7 @@ const team2022: Team[] = [
     members: [
       {
         name: "Tinapat Limsila",
-        position: "NLP Team Leader",
+        position: "Vice President and NLP Team Leader",
         id: "NLP01",
         coreteam: true,
         img: "NLP01_Tinapat_Limsila",
