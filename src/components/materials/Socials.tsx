@@ -37,7 +37,7 @@ export function SocialYoutube({ ...restProps }) {
   return (
     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" {...restProps}>
       <g clipPath="url(#clip0_546_6)">
-        <rect width="36" height="36" rx="7.2" fill="black" />
+        <rect width="36" height="36" rx="7.2" fill="currentColor" />
         <path d="M12 25L25 17.5004L12 10V25Z" fill="white" />
       </g>
       <defs>
