@@ -10,7 +10,7 @@ export default function Footer() {
     const pathnames = router.pathname.split("/")
     const route = pathnames[1]
     if (route === "") return "creamy"
-    else if (route === "projects") {
+    else if (route === "robots") {
       if (pathnames.length > 2) return "tomato"
       else return "creamy"
     } else if (route === "contact") {

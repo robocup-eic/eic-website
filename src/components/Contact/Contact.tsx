@@ -29,7 +29,7 @@ export default function Contact() {
               <SocialInstagram className="h-10 w-10 text-black transition-colors hover:text-tomato" />
             </a>
           </Link>
-          <Link href="https://www.youtube.com/@robocupchula7592">
+          <Link href="https://www.youtube.com/@eic_chula">
             <a>
               <SocialYoutube className="h-10 w-10 text-black transition-colors hover:text-tomato" />
             </a>

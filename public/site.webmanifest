@@ -32,13 +32,13 @@
       "name": "Walkie 1",
       "short_name": "Walkie1",
       "description": "View Walkie 1",
-      "url": "/projects/walkie1"
+      "url": "/robots/walkie1"
     },
     {
       "name": "Walkie 2",
       "short_name": "Walkie2",
       "description": "View Walkie 2",
-      "url": "/projects/walkie2"
+      "url": "/robots/walkie2"
     }
   ]
 }

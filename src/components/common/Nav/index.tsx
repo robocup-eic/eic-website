@@ -8,7 +8,7 @@ import { useMemo } from "react"
 
 const navigation = [
   { title: "Home", url: "/" },
-  { title: "Projects", url: "/projects" },
+  { title: "Robots", url: "/robots" },
   { title: "Publications", url: "/publications" },
   { title: "Our Team", url: "/team" },
   { title: "Contact", url: "/contact" },

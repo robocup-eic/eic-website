@@ -25,16 +25,16 @@ function Card({ title, imgSrc, href }: CardProps) {
   )
 }
 
-export default function ProjectList() {
+export default function RobotList() {
   return (
     <section className="mx-auto px-12 pt-4 md:max-w-5xl xl:max-w-7xl">
       <Typography className="mb-4 break-words text-6xl font-medium xl:text-[120px]" custom={true} type="h1">
-        Projects
+        Robots
       </Typography>
       {/* <div className="grid grid-cols-2 gap-4 lg:gap-16"> */}
       <div className="flex flex-col gap-4 sm:flex-row lg:gap-16">
-        <Card title="Walkie 1" imgSrc="/assets/walkie1-preview.png" href="/projects/walkie1" />
-        <Card title="Walkie 2" imgSrc="/assets/walkie2-preview.png" href="/projects/walkie2" />
+        <Card title="Walkie 1" imgSrc="/assets/walkie1-preview.png" href="/robots/walkie1" />
+        <Card title="Walkie 2" imgSrc="/assets/walkie2-preview.png" href="/robots/walkie2" />
       </div>
     </section>
   )

@@ -49,7 +49,13 @@ export default function TaskList() {
             recognition and face recognition, Walkie is able to tell the guest`&apos;s name and favorite drink.
           </Task>
           <Task title="Hand me that" video="b7UrerdvbKo">
-            [waiting for description]
+          Another second round of tasks in RoboCup@Home.
+
+          This task focuses on Object detection and Human Robot Interaction.
+
+          The robot must identify the object that the human requires. Objects are 
+          randomly group together between 3 - 5 items. The robot must identify 
+          the operator(human) and wait for their instruction.
           </Task>
         </div>
       </div>
@@ -65,7 +71,11 @@ export default function TaskList() {
             those objects and return their segmentation mask.
           </Task>
           <Task title="3D-Self-Mapping" video="AZzRgXxIkyQ">
-            [waiting for description]
+            Walkie2 supports navigating in an unknown area, the grid map is being created in real-time while the robot 
+            is operating. Moreover, the data from the depth camera is used to create a voxel layer for 3D obstacle 
+            avoidance.
+
+            In this video, the robot follows a target while trying to avoid any obstacles in its path.
           </Task>
           <Task title="Human Posture Detection" video="MqH2SN2LCuw">
             This video demonstrates the hand raising detection this feature is used in tasks for Robocup@Home. The
