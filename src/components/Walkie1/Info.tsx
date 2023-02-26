@@ -8,21 +8,21 @@ interface Information {
 
 const information: Information[] = [
   {
-    imgURL: "https://via.placeholder.com/640x360/D24E45/D24E45",
+    imgURL: "https://via.placeholder.com/640x360/EBE7E3/EBE7E3",
     description: "Walkie is a domestic service robot that helps you to do house chores and be your great companion.",
   },
   {
-    imgURL: "https://via.placeholder.com/640x360/D24E45/D24E45",
+    imgURL: "https://via.placeholder.com/640x360/EBE7E3/EBE7E3",
     description:
       "We might think that our daily routine is boring and simple. But, for a robot like Walkie, a simple task may require much complex planning and motion.",
   },
   {
-    imgURL: "https://via.placeholder.com/640x360/D24E45/D24E45",
+    imgURL: "https://via.placeholder.com/640x360/EBE7E3/EBE7E3",
     description:
       "Walkie can arrange groceries in the cabinet, take out the trash, carry your bag, serve the cool drink from the refrigerator, and communicate with you in English.",
   },
   {
-    imgURL: "https://via.placeholder.com/640x360/D24E45/D24E45",
+    imgURL: "https://via.placeholder.com/640x360/EBE7E3/EBE7E3",
     description:
       "Artificial Intelligence plays a significant role in making Walkie reliable and making intelligent decisions in doing boring human routines.",
   },

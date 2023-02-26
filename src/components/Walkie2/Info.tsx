@@ -62,12 +62,12 @@ export default function Info() {
         <span className="my-12 flex items-center justify-center ">
           <LinkButton
             size="md"
-            href="/assets/EIC_Robotics_Team_Description_Paper_2023.pdf"
+            href="/assets/EIC_Robotics_Team_Description_Paper_2023_v2_Final.pdf"
             tomato
             // className="mx-72 flex flex-col items-center justify-center "
             // className=" mx-auto w-1/4 items-center justify-center text-center"
           >
-            Team Description Paper
+            Team Description Paper for Robocup@Home 2023 OPL
           </LinkButton>
         </span>
       </div>

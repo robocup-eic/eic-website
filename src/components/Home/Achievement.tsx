@@ -39,23 +39,23 @@ const achievements = [
   },
   {
     title: "2017 : 3rd Place in PLC competition",
-    image: "https://via.placeholder.com/640x360/D24E45/D24E45",
+    image: "https://via.placeholder.com/640x360/EBE7E3/EBE7E3",
   },
   {
     title: "2015 : 2nd Place in Motor Expo Automotive Innovation, Beach Cleaning Robot",
-    image: "https://via.placeholder.com/640x360/D24E45/D24E45",
+    image: "https://via.placeholder.com/640x360/EBE7E3/EBE7E3",
   },
   {
     title: "2014 : 2nd Place in PLC competition",
-    image: "https://via.placeholder.com/640x360/D24E45/D24E45",
+    image: "https://via.placeholder.com/640x360/EBE7E3/EBE7E3",
   },
   {
     title: "2012 : 1st Place in PLC competition",
-    image: "https://via.placeholder.com/640x360/D24E45/D24E45",
+    image: "https://via.placeholder.com/640x360/EBE7E3/EBE7E3",
   },
   {
     title: "2010 : 6th Place in RoboCup@Home Competition",
-    image: "https://via.placeholder.com/640x360/D24E45/D24E45",
+    image: "https://via.placeholder.com/640x360/EBE7E3/EBE7E3",
   },
   {
     title: "2008 : 1st Place in RoboCup Soccer Competition and 1st Place RoboCup Rescue",
@@ -63,11 +63,11 @@ const achievements = [
   },
   {
     title: "2007 : 2nd Place in RoboCup Soccer Competition",
-    image: "https://via.placeholder.com/640x360/D24E45/D24E45",
+    image: "https://via.placeholder.com/640x360/EBE7E3/EBE7E3",
   },
   {
     title: "2006 : 3rd Place in RoboCup Soccer Competition",
-    image: "https://via.placeholder.com/640x360/D24E45/D24E45",
+    image: "https://via.placeholder.com/640x360/EBE7E3/EBE7E3",
   },
 ]
 

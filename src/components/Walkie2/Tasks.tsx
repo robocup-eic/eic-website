@@ -70,7 +70,7 @@ export default function TaskList() {
             robot wandering around an office with random objects and furniture. This computer vision model can detect
             those objects and return their segmentation mask.
           </Task>
-          <Task title="3D-Self-Mapping" video="AZzRgXxIkyQ">
+          <Task title="3D Self-Mapping" video="AZzRgXxIkyQ">
             Walkie2 supports navigating in an unknown area, the grid map is being created in real-time while the robot 
             is operating. Moreover, the data from the depth camera is used to create a voxel layer for 3D obstacle 
             avoidance.
