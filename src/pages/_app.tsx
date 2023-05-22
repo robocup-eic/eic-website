@@ -4,7 +4,7 @@ import type { AppProps } from "next/app"
 import PageLayout from "@/components/common/PageLayout"
 import { AnimateSharedLayout } from "framer-motion"
 import { useEffect, useState } from "react"
-// import AnimatedCursor from "@/components/common/AnimatedCursor"
+
 import { useWindowSize } from "usehooks-ts"
 
 function MyApp({ Component, pageProps }: AppProps) {
