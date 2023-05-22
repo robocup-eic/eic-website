@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+/* @layer components {
   :root {
     --color-cursor: 220, 90, 90;
     --cursor-outline-shade: 0.3;
@@ -39,4 +39,4 @@
     height: var(--cursor-outline-size);
     background-color: rgba(var(--color-cursor), var(--cursor-outline-shade));
   }
-}
+} */
