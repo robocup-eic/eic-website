@@ -1014,13 +1014,14 @@ const team2023: Team[] = [
 
 const teams: Teams[] = [
   {
-    year: "2023",
-    teams: team2023,
-  },
-  {
     year: "2022",
     teams: team2022,
   },
+  {
+    year: "2023",
+    teams: team2023,
+  },
+  
 ]
 
 export default teams

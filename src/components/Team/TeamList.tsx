@@ -6,7 +6,7 @@ import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid"
 import teams from "./teams"
 
 const TeamList = () => {
-  const [selected, setSelected] = useState("2022")
+  const [selected, setSelected] = useState("2023")
   const selectedYearTeam = teams.find((team) => team.year === selected)?.teams || []
 
   return (
