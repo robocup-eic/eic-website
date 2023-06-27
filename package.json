@@ -19,7 +19,6 @@
     "framer-motion": "^7.6.7",
     "locomotive-scroll": "^4.1.4",
     "next": "^12.1.6",
-    "next-pwa": "^5.5.4",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
     "react-locomotive-scroll": "^0.2.2",

@@ -1,11 +1,7 @@
 /** @type {import('next').NextConfig} */
-const withPWA = require("next-pwa")({
-  dest: "build",
-  swSrc: "./service-worker.js",
-})
 const { join } = require("path")
 
-module.exports = withPWA({
+module.exports = {
   reactStrictMode: true,
   // pwa: {
   //   dest: "build",
@@ -40,4 +36,4 @@ module.exports = withPWA({
 
     return config
   },
-})
+}
