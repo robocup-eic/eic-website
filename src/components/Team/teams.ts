@@ -839,13 +839,13 @@ const team2023: Team[] = [
     name: "PR Team",
     category: "Support Team",
     members: [
-      {
-        name: "Thanasit Pakkaananchai",
-        position: "PR Team Leader",
-        id: "PR01",
-        coreteam: true,
-        img: "2023/PR01_Thanasit_Pakkaananchai",
-      },
+      // {
+      //   name: "Thanasit Pakkaananchai",
+      //   position: "PR Team Leader",
+      //   id: "PR01",
+      //   coreteam: true,
+      //   img: "2023/PR01_Thanasit_Pakkaananchai",
+      // },
       {
         name: "Krittapat Onthuam",
         position: "PR Team Member",
@@ -871,7 +871,7 @@ const team2023: Team[] = [
         name: "Darika Kulrattanarak",
         position: "PR Team Member",
         id: "PR05",
-        coreteam: false,
+        coreteam: true,
         img: "2023/PR05_Darika_Kulrattanarak",
       },
       {
