@@ -544,6 +544,42 @@ const team2023: Team[] = [
         coreteam: true,
         img: "2023/Mech15_Wasin_Lapthanaphat",
       },
+      {
+        name: "Yossathorn Imsaengsuk",
+        position: "Mechanical Team Member",
+        id: "Mech16",
+        coreteam: true,
+        img: "2023/Mech16Yossathorn_Imsaengsuk",
+      },
+      {
+        name: "Nattawat Malainak",
+        position: "Mechanical Team Member",
+        id: "Mech17",
+        coreteam: true,
+        img: "2023/Mech17Nattawat_Malainak",
+      },
+      {
+        name: "Pisit Pongsaran",
+        position: "Mechanical Team Member",
+        id: "Mech18",
+        coreteam: true,
+        img: "2023/Mech18Pisit_Pongsaran",
+      },
+      {
+        name: "Pongphol Suchirapatpong",
+        position: "Mechanical Team Member",
+        id: "Mech19",
+        coreteam: true,
+        img: "2023/Mech19Pongphol_Suchirapatpong",
+      },
+      {
+        name: "Poom Siripin",
+        position: "Mechanical Team Member",
+        id: "Mech20",
+        coreteam: true,
+        img: "2023/Mech20Poom_Siripin",
+      },
+
     ],
   },
   // Electrical Team
